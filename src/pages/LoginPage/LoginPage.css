@@ -1,0 +1,20 @@
+.log-in-page {
+    background: url('../../images/image01.jpg') fixed no-repeat center/cover;
+    width: 100%;
+}
+
+.google-log-in {
+    border: none;
+    background: #ffffff;
+    color: #000000a2;
+    font-size: 1.25vw;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 50px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.google-log-in:hover {
+    color: var(--aqua);
+}

@@ -1,0 +1,14 @@
+.user-image {
+    width: 100%;
+    max-width: 30px;
+    border-radius: 50%;
+    border: #dfdfdf;
+}
+
+.log-out-btn {
+    color: rgba(0, 0, 0, 0.836);
+}
+
+.log-out-btn:hover {
+        color: var(--aqua);
+}

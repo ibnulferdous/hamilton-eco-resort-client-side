@@ -1,0 +1,8 @@
+.page-not-found {
+    background: url('../../images/page-not-found.jpg') fixed no-repeat center/cover;
+    width: 100%;
+}
+
+.page-not-found .bg-overlay {
+    background: hsla(0, 0%, 0%, 0.089);
+}

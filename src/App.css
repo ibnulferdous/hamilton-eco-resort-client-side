@@ -11,6 +11,14 @@
   font-weight: 300;
 }
 
+.hero-h1 {
+    font-size: 7.5vw;
+}
+
+.fullscreen {
+  min-height: calc(100vh - 56px);
+}
+
 .p-6 {
   padding: 50px;
 }
@@ -67,6 +75,7 @@
   font-weight: 400;
   font-size: 18px;
   text-transform: capitalize;
+  text-decoration: none;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -74,6 +83,35 @@
 .her-main-btn:hover {
   color: var(--aqua);
 }
+
+.her-main-btn-white {
+  background: #ffffff00;
+  border: none;
+  border-bottom: 1px solid var(--aqua);
+  padding: 0 0 4px;
+  color: #ffffff;
+  font-family: var(--pd);
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.her-main-btn-white:hover {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.836);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--aqua);
+}
+
+
 
 
 
