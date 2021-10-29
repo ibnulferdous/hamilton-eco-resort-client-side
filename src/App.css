@@ -1,6 +1,87 @@
-.App {
-  text-align: center;
+/* Utility Classes */
+.lato {
+  font-family: var(--lato);
 }
+
+.playfair {
+  font-family: var(--pd);
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.p-6 {
+  padding: 50px;
+}
+
+.py-6 {
+  padding: 50px 0;
+}
+
+.p-7 {
+  padding: 75px;
+}
+
+.py-7 {
+  padding: 75px 0;
+}
+
+.pt-7 {
+  padding-top: 75px;
+}
+
+.pb-7 {
+  padding-bottom: 75px;
+}
+
+.p-8 {
+  padding: 100px;
+}
+
+.py-8 {
+  padding: 100px 0;
+}
+
+.pt-8 {
+  padding-top: 100px;
+}
+
+.pb-8 {
+  padding-bottom: 100px;
+}
+
+.her-heading {
+  font-family: var(--pd);
+  font-weight: 100;
+  font-style: italic;
+}
+
+.her-main-btn {
+  background: #ffffff00;
+  border: none;
+  border-bottom: 1px solid var(--aqua);
+  padding: 0 0 4px;
+  color: #000000;
+  font-family: var(--pd);
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.her-main-btn:hover {
+  color: var(--aqua);
+}
+
+
+
+
+
+
+
+/*
 
 .App-logo {
   height: 40vmin;
@@ -13,21 +94,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +101,6 @@
   to {
     transform: rotate(360deg);
   }
-}
+} 
+
+*/
