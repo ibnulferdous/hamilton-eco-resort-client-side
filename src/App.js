@@ -12,6 +12,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './pages/LoginPage/PrivateRoute/PrivateRoute';
 import ManageBookingsPage from './pages/ManageBookingsPage/ManageBookingsPage';
 import MyBookingsPage from './pages/MyBookingsPage/MyBookingsPage';
+import AddVillaPage from './pages/AddVillaPage/AddVillaPage';
 
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/manage-all-bookings">
               <ManageBookingsPage></ManageBookingsPage>
+            </PrivateRoute>
+            <PrivateRoute path="/add-new-villa">
+              <AddVillaPage></AddVillaPage>
             </PrivateRoute>
             <Route path="/log-in">
               <LoginPage></LoginPage>

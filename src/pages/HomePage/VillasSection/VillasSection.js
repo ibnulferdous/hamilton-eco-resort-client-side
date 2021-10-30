@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Row } from 'react-bootstrap';
+import VillaCard from './VillaCard/VillaCard';
+import './VillasSection.css';
 
-const ServicesSection = () => {
+const VillasSection = () => {
+    const [villas, setVillas] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/villas')
+        .then(res => res.json())
+        .then(data => setVillas(data));
+    }, []);
+
+
     return (
-        <div className="service-section">
-            <div className="container pt-8 pb-6">
+        <div className="villas-section py-8">
+            <div className="container pb-7">
                 <div className="row">
                     <div className="col col-lg-6">
                         <h2 className="display-4 her-heading mb-4">Luxury Accommodation</h2>
@@ -12,10 +24,14 @@ const ServicesSection = () => {
                 </div>
             </div>
             <div className="container">
-
+                <Row xs={1} md={2} className="g-0 g-md-5">
+                    {
+                        villas.map(villa => <VillaCard key={villa._id} villa={villa}></VillaCard>)
+                    }
+                </Row>
             </div>
         </div>
     );
 };
 
-export default ServicesSection;
+export default VillasSection;
