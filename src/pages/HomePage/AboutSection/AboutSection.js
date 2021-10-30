@@ -17,7 +17,7 @@ const AboutSection = () => {
                             <br className="d-none d-lg-inline" /> 
                             Hamilton Eco Resort
                         </h2>
-                        <p className="text-center mb-5">Escape to a hideaway island fringed by turquoise lagoon. Laze in your over water villa or bungalow, puffer fish swimming in crystal-clear waters below. At Anantara Veli Maldives Resort, write your own chapter of romance. Salute the sun in an ocean-facing pavilion. Discover blissful Ayurvedic treatments at Balance Wellness by Anantara. Cruise into the sunset on a luxury yacht or dine under the stars. </p>
+                        <p className="text-center mb-5 lh-lg text-secondary">Escape to a hideaway island fringed by turquoise lagoon. Laze in your over water villa or bungalow, puffer fish swimming in crystal-clear waters below. At Anantara Veli Maldives Resort, write your own chapter of romance. Salute the sun in an ocean-facing pavilion. Discover blissful Ayurvedic treatments at Balance Wellness by Anantara. Cruise into the sunset on a luxury yacht or dine under the stars. </p>
                         <button className="her-main-btn d-block mx-auto">
                             Discover More
                         </button>
@@ -31,10 +31,14 @@ const AboutSection = () => {
                             <img src={home5} className="img-fluid" alt="resort" />
                         </div>
                         <div className="col">
-                            <img src={home4} className="img-fluid" alt="resort" />
+                            <div>
+                                <img src={home4} className="img-fluid pt-0 pt-lg-5" alt="resort" />
+                            </div>
                         </div>
                         <div className="col">
-                            <img src={home6} className="img-fluid" alt="resort" />
+                            <div className="pt-0 pt-lg-5">
+                                <img src={home6} className="img-fluid pt-0 pt-lg-5" alt="resort" />
+                            </div>
                         </div>
                     </div>
                 </div>

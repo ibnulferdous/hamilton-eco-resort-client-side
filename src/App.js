@@ -9,6 +9,9 @@ import Navigation from './pages/SharedComponents/Navigation/Navigation';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import LoginPage from './pages/LoginPage/LoginPage';
 import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './pages/LoginPage/PrivateRoute/PrivateRoute';
+import ManageBookingsPage from './pages/ManageBookingsPage/ManageBookingsPage';
+import MyBookingsPage from './pages/MyBookingsPage/MyBookingsPage';
 
 
 function App() {
@@ -22,6 +25,12 @@ function App() {
             <Route path="/home">
               <HomePage></HomePage>
             </Route>
+            <PrivateRoute path="/manage-my-bookings">
+              <MyBookingsPage></MyBookingsPage>
+            </PrivateRoute>
+            <PrivateRoute path="/manage-all-bookings">
+              <ManageBookingsPage></ManageBookingsPage>
+            </PrivateRoute>
             <Route path="/log-in">
               <LoginPage></LoginPage>
             </Route>
