@@ -1,0 +1,8 @@
+footer {
+    background: url("https://i.postimg.cc/Yq7mxdhf/footer-1.jpg") no-repeat center /cover;
+}
+
+.footer-logo {
+    width: 100%;
+    max-width: 85px;
+}

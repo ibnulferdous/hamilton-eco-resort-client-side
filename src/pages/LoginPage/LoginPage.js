@@ -8,7 +8,6 @@ const LoginPage = () => {
     const location = useLocation();
     const history = useHistory();
     const redirectUri = location.state?.from || '/';
-    console.log(location);
 
     const handleGoogleLogIn = () => {
         logInwithGoogle()

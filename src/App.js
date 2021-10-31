@@ -13,6 +13,8 @@ import PrivateRoute from './pages/LoginPage/PrivateRoute/PrivateRoute';
 import ManageBookingsPage from './pages/ManageBookingsPage/ManageBookingsPage';
 import MyBookingsPage from './pages/MyBookingsPage/MyBookingsPage';
 import AddVillaPage from './pages/AddVillaPage/AddVillaPage';
+import VillaDetailsPage from './pages/VillaDetailsPage/VillaDetailsPage';
+import Footer from './pages/SharedComponents/Footer/Footer';
 
 
 function App() {
@@ -26,6 +28,9 @@ function App() {
             <Route path="/home">
               <HomePage></HomePage>
             </Route>
+            <PrivateRoute path="/villa-details/:villaId">
+              <VillaDetailsPage></VillaDetailsPage>
+            </PrivateRoute>
             <PrivateRoute path="/manage-my-bookings">
               <MyBookingsPage></MyBookingsPage>
             </PrivateRoute>
@@ -45,6 +50,8 @@ function App() {
               <PageNotFound></PageNotFound>
             </Route>
           </Switch>
+
+          <Footer></Footer>
         </Router>
       </AuthProvider> 
     </div>
