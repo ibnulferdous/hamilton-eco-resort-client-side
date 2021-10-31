@@ -7,7 +7,7 @@ const VillasSection = () => {
     const [villas, setVillas] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/villas')
+        fetch('https://fierce-tundra-10720.herokuapp.com/villas')
         .then(res => res.json())
         .then(data => setVillas(data));
     }, []);

@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 const AddVillaPage = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const onSubmit = (data) => {
-        axios.post('http://localhost:5000/villas', data)
+        axios.post('https://fierce-tundra-10720.herokuapp.com/villas', data)
         .then(res => {
             if(parseInt(res.data.insertedId) > 0) {
                 alert('Villa added to the list successfully!');

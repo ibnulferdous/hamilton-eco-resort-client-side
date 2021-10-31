@@ -6,14 +6,14 @@ const ManageBookingsPage = () => {
     const [allBookings, setAllBookings] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings/')
+        fetch('https://fierce-tundra-10720.herokuapp.com/bookings/')
         .then(res => res.json())
         .then(data => setAllBookings(data));
     }, []);
 
 
     const handleOrderStatus = (id) => {
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://fierce-tundra-10720.herokuapp.com/bookings/${id}`;
         const data = { orderStatus: "approved" };
 
         fetch(url, {
@@ -28,7 +28,7 @@ const ManageBookingsPage = () => {
             if(data.modifiedCount) {
                 alert("Approved successfully!");
 
-                fetch('http://localhost:5000/bookings/')
+                fetch('https://fierce-tundra-10720.herokuapp.com/bookings/')
                 .then(res => res.json())
                 .then(data => setAllBookings(data));
             }
@@ -36,7 +36,7 @@ const ManageBookingsPage = () => {
     }
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://fierce-tundra-10720.herokuapp.com/bookings/${id}`;
 
         fetch(url, {
             method: 'DELETE'

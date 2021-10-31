@@ -9,7 +9,7 @@ const MyBookingsPage = () => {
     const userId = [user.uid];
 
     useEffect( () => {
-        fetch('http://localhost:5000/bookings/bygoogleid', {
+        fetch('https://fierce-tundra-10720.herokuapp.com/bookings/bygoogleid', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ const MyBookingsPage = () => {
     }, [user]);
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://fierce-tundra-10720.herokuapp.com/bookings/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())

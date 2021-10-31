@@ -14,7 +14,7 @@ const VillaDetailsPage = () => {
 
     
     useEffect( () => {
-        fetch(`http://localhost:5000/villas/${villaId}`)
+        fetch(`https://fierce-tundra-10720.herokuapp.com/villas/${villaId}`)
         .then(res => res.json())
         .then(data => setVillaDetails(data));
     } , []);
@@ -26,7 +26,7 @@ const VillaDetailsPage = () => {
         data.googleId = user.uid;
         data.orderStatus = "pending";
 
-        fetch(`http://localhost:5000/bookings`, {
+        fetch(`https://fierce-tundra-10720.herokuapp.com/bookings`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -77,7 +77,7 @@ const VillaDetailsPage = () => {
                                 <img src={villaIcon} className="d-inline-block card-icon" alt="villa size" />
                                 <p className="d-inline-block ms-3 mb-0">{dimension} sqm</p>
                             </div>
-                            <div className="mb-3 mb-md-0">
+                            <div >
                                 <img src={viewIcon} className="d-inline-block card-icon" alt="view" />
                                 <p className="d-inline-block ms-3 mb-0">{view}</p>
                             </div>
