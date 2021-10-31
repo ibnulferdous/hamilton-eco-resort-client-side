@@ -11,7 +11,6 @@ const ManageBookingsPage = () => {
         .then(data => setAllBookings(data));
     }, []);
 
-    // console.log(allBookings);
 
     const handleOrderStatus = (id) => {
         const url = `http://localhost:5000/bookings/${id}`;
